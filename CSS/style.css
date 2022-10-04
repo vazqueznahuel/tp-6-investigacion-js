@@ -6,7 +6,9 @@
     --color-negro: rgb(29, 25, 37);
     --lineas-borde: 4px;
     --margin-principal: 20px;
+    --margin-secundario: 10px;
     --padding-principal: 20px;
+    --padding-secundario: 10px;
     --tamaño-titulos-ejercicios: 25px;
     --tamaño-parrafo-ejercicios: 20px;
 }
@@ -24,18 +26,69 @@ body {
     background-color: var(--color-negro);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* Header */
 
 header {
+    position: relative;
+    z-index: 500;
     color: var(--color-negro);
     background-color: var(--color-amarillo);
     text-align: left;
+    padding: var(--padding-secundario);
+    padding-left: var(--padding-principal);
 }
 
 header img {
     width: 70px;
     float: right;
+}
+
+
+/* nav bar */
+
+nav {
+    text-align: center;
+    z-index: 1;
+    margin-top: -8%;
+    position: fixed;
+    width: 12%;
+    height: 100%;
+    border-right: 1px solid var(--color-amarillo);
+}
+
+#logo-nav {
+    height: 90px;
+    z-index: 1;
+    background-color: var(--color-amarillo);
+    width: 100%;
+    border-right: solid 1px var(--color-amarillo);
+}
+
+.elemento-lista {
+    margin-top: 30px;
+}
+
+nav ul li a {
+    border-radius: 17px;
+    padding: 7px;
+    color: var(--color-letra-principal);
+    text-decoration: none;
+    transition: all ease-in-out 150ms;
+}
+
+nav ul li :hover {
+    color: var(--color-negro);
+    background-color: var(--color-amarillo);
+}
+
+nav ul li img {
+    float: left;
+    width: 90px;
 }
 
 
@@ -46,8 +99,15 @@ header img {
     margin: 5% 15%;
 }
 
-#introduccion h3 {
-    border-top: var(--color-amarillo) solid var(--lineas-borde);
+#introduccion h2 {
+    font-size: var(--tamaño-titulos-ejercicios);
+    border-bottom: var(--color-amarillo) solid var(--lineas-borde);
+    margin-bottom: var(--margin-secundario);
+}
+
+#introduccion span {
+    margin-top: var(--margin-principal);
+    padding-bottom: var(--margin-principal);
 }
 
 
@@ -58,7 +118,9 @@ header img {
     display: grid;
     margin: 10% 15%;
     grid-template-columns: 100%;
-    grid-gap: 10px;
+    grid-template-rows: auto;
+    grid-row: auto;
+    grid-gap: var(--margin-principal);
     height: 500px;
 }
 
