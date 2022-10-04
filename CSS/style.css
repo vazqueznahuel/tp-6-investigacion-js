@@ -4,6 +4,11 @@
     --color-amarillo: #F7DF1E;
     --color-letra-principal: white;
     --color-negro: rgb(29, 25, 37);
+    --lineas-borde: 4px;
+    --margin-principal: 20px;
+    --padding-principal: 20px;
+    --tamaño-titulos-ejercicios: 25px;
+    --tamaño-parrafo-ejercicios: 20px;
 }
 
 
@@ -42,7 +47,7 @@ header img {
 }
 
 #introduccion h3 {
-    border-top: var(--color-amarillo) solid 2px;
+    border-top: var(--color-amarillo) solid var(--lineas-borde);
 }
 
 
@@ -52,7 +57,41 @@ header img {
     color: var(--color-letra-principal);
     display: grid;
     margin: 10% 15%;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 25% 25% 25%;
+    grid-template-columns: 100%;
     grid-gap: 10px;
+    height: 500px;
+}
+
+
+/* items */
+
+.item {
+    border: solid 1px var(--color-amarillo);
+    border-radius: 17px;
+    padding: var(--padding-principal);
+}
+
+span {
+    font-size: var(--tamaño-titulos-ejercicios);
+}
+
+.parrafo-ejercicio {
+    font-size: var(--tamaño-parrafo-ejercicios);
+}
+
+
+/* Ejercicio uno */
+
+#ejercicioUno {
+    margin: var(--margin-principal);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+
+.grid-version-js {
+    border-right: solid var(--lineas-borde) var(--color-amarillo);
+    margin: var(--margin-principal);
+    padding-right: var(--padding-principal);
 }
