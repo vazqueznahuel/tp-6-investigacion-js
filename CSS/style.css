@@ -3,6 +3,7 @@
 :root {
     --color-amarillo: #F7DF1E;
     --color-letra-principal: white;
+    --color-negro: rgb(29, 25, 37);
 }
 
 
@@ -14,11 +15,15 @@
     font-family: Nunito;
 }
 
+body {
+    background-color: var(--color-negro);
+}
+
 
 /* Header */
 
 header {
-    color: var(--color-letra-principal);
+    color: var(--color-negro);
     background-color: var(--color-amarillo);
     text-align: left;
 }
@@ -29,11 +34,24 @@ header img {
 }
 
 
+/* Introduccion */
+
+#introduccion {
+    color: var(--color-letra-principal);
+    margin: 5% 15%;
+}
+
+#introduccion h3 {
+    border-top: var(--color-amarillo) solid 2px;
+}
+
+
 /* Seccion de grid */
 
 #grid {
+    color: var(--color-letra-principal);
     display: grid;
-    padding: 10% 15%;
+    margin: 10% 15%;
     grid-template-columns: 50% 50%;
     grid-template-rows: 25% 25% 25%;
     grid-gap: 10px;
