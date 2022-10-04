@@ -88,6 +88,7 @@ nav ul li a {
 }
 
 nav ul li :hover {
+    border: 0px;
     color: var(--color-negro);
     background-color: var(--color-amarillo);
 }
@@ -177,10 +178,10 @@ footer {
 }
 
 footer div {
-    text-align: justify;
+    text-align: end;
     padding: var(--padding-secundario);
     color: var(--color-negro);
     font-weight: 400;
     padding-top: 30px;
-    padding-left: 33px;
+    padding-right: 33px;
 }
