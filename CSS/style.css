@@ -1,7 +1,40 @@
+/* varaibles */
+
+:root {
+    --color-amarillo: #F7DF1E;
+    --color-letra-principal: white;
+}
+
+
+/* selector universal */
+
 * {
     margin: 0;
     padding: 0;
+    font-family: Nunito;
+}
+
+
+/* Header */
+
+header {
+    color: var(--color-letra-principal);
+    background-color: var(--color-amarillo);
+    text-align: left;
+}
+
+header img {
+    width: 70px;
+    float: right;
 }
 
 
 /* Seccion de grid */
+
+#grid {
+    display: grid;
+    padding: 10% 15%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25%;
+    grid-gap: 10px;
+}
