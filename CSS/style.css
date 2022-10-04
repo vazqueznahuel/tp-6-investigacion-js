@@ -80,6 +80,7 @@ nav {
 
 nav ul li a {
     border-radius: 17px;
+    border: var(--color-negro) solid 1px;
     padding: 7px;
     color: var(--color-letra-principal);
     text-decoration: none;
@@ -136,6 +137,7 @@ nav ul li img {
     border: solid 1px var(--color-amarillo);
     border-radius: 17px;
     padding: var(--padding-principal);
+    margin-bottom: 150px;
 }
 
 span {
@@ -161,4 +163,24 @@ span {
     border-right: solid var(--lineas-borde) var(--color-amarillo);
     margin: var(--margin-principal);
     padding-right: var(--padding-principal);
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 200%;
+    bottom: 0;
+    height: 300px;
+    width: 100%;
+    background-color: var(--color-amarillo);
+}
+
+footer div {
+    text-align: justify;
+    padding: var(--padding-secundario);
+    color: var(--color-negro);
+    font-weight: 400;
+    padding-top: 30px;
+    padding-left: 33px;
 }
