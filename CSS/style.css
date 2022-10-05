@@ -152,7 +152,7 @@ span {
 
 /* Ejercicio uno */
 
-#ejercicioUno {
+.ejercicioUno {
     margin: var(--margin-principal);
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -173,6 +173,7 @@ span {
     margin: var(--margin-secundario);
     margin-top: -10px;
     padding-top: 5px;
+    margin-bottom: var(--margin-principal);
 }
 
 .grid-version-js span {
@@ -196,10 +197,32 @@ span {
 }
 
 
+/* Ejercicio tres */
+
+.cartel {
+    width: 90%;
+    border: var(--color-amarillo) 1px solid;
+    padding: var(--padding-secundario);
+    margin: var(--margin-secundario);
+    font-size: small;
+}
+
+dt {
+    font-size: var(--tamaño-parrafo-ejercicios);
+    border-left: solid var(--color-amarillo) var(--lineas-borde);
+    padding-left: var(--padding-secundario);
+    margin: var(--margin-secundario);
+}
+
+dd {
+    margin: var(--margin-secundario);
+}
+
+
 /* Footer */
 
 footer {
-    margin-top: 200%;
+    margin-top: 300%;
     bottom: 0;
     height: 300px;
     width: 100%;
