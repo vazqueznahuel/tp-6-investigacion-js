@@ -19,7 +19,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Nunito;
 }
 
 body {
@@ -44,7 +44,7 @@ header {
 }
 
 h1 {
-    font-family: 'Liberation Serif';
+    font-family: 'Segoe UI';
     letter-spacing: 2px;
 }
 
@@ -103,7 +103,7 @@ nav ul li img {
 
 #introduccion {
     color: var(--color-letra-principal);
-    margin: 5% 15%;
+    margin: 5% 25%;
 }
 
 #introduccion h2 {
@@ -123,7 +123,7 @@ nav ul li img {
 #grid {
     color: var(--color-letra-principal);
     display: grid;
-    margin: 10% 15%;
+    margin: 10% 25%;
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-row: auto;
@@ -155,15 +155,14 @@ span {
 #ejercicioUno {
     margin: var(--margin-principal);
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
     grid-gap: 10px;
 }
 
 .grid-version-js {
     border-right: solid var(--lineas-borde) var(--color-amarillo);
-    margin: var(--margin-principal);
-    padding-right: var(--padding-principal);
+    margin: var(--margin-secundario);
 }
 
 
