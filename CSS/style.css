@@ -157,12 +157,27 @@ span {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
-    grid-gap: 10px;
+    grid-gap: 15px;
+    margin-left: -10px;
+    padding: var(--padding-secundario);
+}
+
+#primer-ejercicio h3 {
+    padding-left: 3px;
+    border-bottom: solid var(--color-amarillo) 1px;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .grid-version-js {
     border-right: solid var(--lineas-borde) var(--color-amarillo);
     margin: var(--margin-secundario);
+    margin-top: -10px;
+    padding-top: 5px;
+}
+
+.grid-version-js span {
+    font-size: 17px;
 }
 
 
