@@ -43,11 +43,6 @@ header {
     padding-left: var(--padding-principal);
 }
 
-h1 {
-    font-family: 'Segoe UI';
-    letter-spacing: 2px;
-}
-
 header img {
     width: 70px;
     float: right;
@@ -205,6 +200,15 @@ span {
     padding: var(--padding-secundario);
     margin: var(--margin-secundario);
     font-size: small;
+}
+
+.titulo-espacio {
+    margin-top: 10%;
+}
+
+dl {
+    padding-bottom: 10%;
+    border-bottom: var(--color-amarillo) solid 2px;
 }
 
 dt {
