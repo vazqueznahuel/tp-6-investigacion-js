@@ -19,7 +19,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Nunito;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body {
@@ -44,7 +44,7 @@ header {
 }
 
 h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Liberation Serif';
     letter-spacing: 2px;
 }
 
