@@ -179,14 +179,14 @@ span {
 
 /* Ejercicio dos */
 
-#segundo-ejercicio div {
+.container-imagen {
     margin: var(--margin-principal);
     width: 80%;
     border-right: solid var(--color-amarillo) var(--lineas-borde);
     padding-right: var(--padding-principal);
 }
 
-#segundo-ejercicio img {
+.imagen-ejemplo {
     width: 90%;
     border-radius: 17px;
     border: var(--color-amarillo) solid 1px;
@@ -221,6 +221,11 @@ dt {
 
 dd {
     margin: var(--margin-secundario);
+}
+
+#no-border {
+    border-bottom: none;
+    margin-bottom: -10%;
 }
 
 
