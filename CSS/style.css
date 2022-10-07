@@ -223,7 +223,7 @@ dd {
     margin: var(--margin-secundario);
 }
 
-#no-border {
+.no-border {
     border-bottom: none;
     margin-bottom: -10%;
 }
@@ -232,7 +232,7 @@ dd {
 /* Footer */
 
 footer {
-    margin-top: 450%;
+    margin-top: 1000%;
     bottom: 0;
     height: 300px;
     width: 100%;
