@@ -323,7 +323,23 @@
         </div>
         <div class="item" id="decimo-ejercicio">
             <h2>Punto numero 10</h2>
-            <p></p>
+            <h3>A- Obtener datos del input </h3>
+            <p>Hay 3 maneras para poder obtener los datos de un input de un formulario, estas son:</p>
+            <dl class="no-border">
+                <dt>document.getElementById(id_name)</dt>
+                <dd>En este se utiliza el <strong>ID</strong> de la etiqueta para asi poder obtener los datos de el elemento con la misma.</dd>
+                <dt>document.getElementsByClassName('class_name')</dt>
+                <dd>Este funciona de manera muy simila al de <strong>ID</strong>, solo que con el atributo <strong>class</strong>.</dd>
+                <dt>document.querySelector('selector')</dt>
+                <dd>Con este simplemente deberemos de poner el nombre de la etiqueta, ya que este va a funcionar como selector, tal cual como en CSS, para asi obtener los datos del mismo.</dd>
+            </dl>
+            <h3>B- Verificacion de datos del input</h3>
+            <p>Para verificar los datos ingresados en los formularios, se utiliza mediante <strong>JS</strong> el manejador de eventos 'onsumbit' y desde el mismo se lleva a cabo el llamar a la funcion 'validar()' la cual se encarga de confirmar que se hayan
+                colocados los datos correspondientes, a los campos que definimos.</p>
+            <h3>C- Formulario de validacion que 'no sos un robot'</h3>
+            <p>Un CAPTCHA es un pequeño algoritmo el cual ayuda a verficar que quien este ingresando datos o moviendose en el entorno web, no sea un robot o programa diseñado para tal accion. Para hacer uno primero se debe de crear un texto mediante <strong>JS</strong>,
+                luego se muestra el texto al usuario de manera que solamente pueda ser leido si se vio el texto, para que asi el usuario ingrese el mismo en un elemento de entrada. Luego con una funcion se devolvera un valor que indique si es un robot
+                o no mediante valores de <strong>true</strong> o <strong>false</strong>.</p>
         </div>
     </div>
     <footer>
